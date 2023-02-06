@@ -1,8 +1,13 @@
 .Cart-container{
     margin: 5px;
+    
 }
 
-
+.foter{
+margin: 5px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
 
 .Cart-container img {
     

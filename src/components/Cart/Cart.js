@@ -8,9 +8,11 @@ const Cart = ({cart,handleRemoveCart}) => {
             <h4>selected Item: {cart.length}</h4>
             {
                 cart.map(tshart=><p className='order-summary' key={tshart._id}>
-                {tshart.name}
                 <img src={tshart.picture} alt='' ></img>
-                <button onClick={()=>handleRemoveCart(tshart)}>X</button>
+               <div className='foter'>
+                 {tshart.name}
+                <button onClick={()=>handleRemoveCart(tshart)}><b>X</b></button>
+               </div>
 
 
                 </p>)

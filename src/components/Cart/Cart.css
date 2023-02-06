@@ -1,0 +1,14 @@
+.Cart-container{
+    margin: 5px;
+}
+
+
+
+.Cart-container img {
+    
+   height: 200px; 
+}
+.order-summary{
+    border: 1px solid greenyellow;
+    
+}

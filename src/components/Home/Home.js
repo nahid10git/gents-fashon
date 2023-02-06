@@ -3,6 +3,7 @@ import './Home.css'
 import { useLoaderData } from 'react-router-dom';
 import TShart from '../TShart/TShart';
 import Cart from '../Cart/Cart';
+import Orders from '../Orders/Orders';
 
 const Home = () => {
     const tshart = useLoaderData();
@@ -48,6 +49,16 @@ const Home = () => {
                 cart={cart}
                 handleRemoveCart={handleRemoveCart}
                 ></Cart>
+
+
+            </div>
+
+            <div className='orders-container'>
+                {
+                    tshart.map(tshart=><Orders key={tshart._id}
+                        tshart = {tshart}
+                        handleAddToCart={handleAddToCart}></Orders>)
+                }
 
 
             </div>

@@ -1,0 +1,21 @@
+.about-container{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+.logo{
+    color: white ;
+    margin-top: 45%;
+    margin-bottom: 45%;
+    margin-left: 50%;
+
+}
+.service-container{
+   color: white; 
+   margin-right: 50%;
+   margin-top: 30px;
+}
